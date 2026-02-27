@@ -1,0 +1,16 @@
+environment: development
+database:
+  type: sqlite
+  name: app.db
+  echo: false
+azure:
+  openai:
+    api_key: "your-api-key-here"
+    endpoint: "your-endpoint-here"
+    api_version: "2023-05-15"
+    deployment_name: "gpt-4"
+app:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
+  secret_key: "dev-secret-key-change-in-production"
